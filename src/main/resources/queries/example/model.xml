@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProjectQueriesContainer>
+	<DataBase>
+		<id>database_h2</id>
+		<name>h2</name> 
+		<QuerySyntax>
+			<id>concat_postgresql</id>
+			<name>concat</name>
+			<value>||</value>
+		</QuerySyntax>
+		<QuerySyntax>
+			<id>boolean_true_postgresql</id>
+			<name>boolean_true</name>
+			<value>true</value>
+		</QuerySyntax>
+		<QuerySyntax>
+			<id>boolean_false_postgresql</id>
+			<name>boolean_false</name>
+			<value>false</value>
+		</QuerySyntax>
+		<QuerySyntax>
+			<id>sql_lower_postgresql</id>
+			<name>sql_lower</name>
+			<value>LOWER</value>
+		</QuerySyntax>
+		<QuerySyntax>
+			<id>sql_last_table_sequence_postgresql</id>
+			<name>last_table_sequence</name>
+			<value>select currval(pg_get_serial_sequence('${tableName}', 'id'))</value>
+		</QuerySyntax>
+		<QuerySyntax>
+			<id>sql_inner_join</id>
+			<name>inner_join</name>
+			<value>INNER JOIN</value>
+		</QuerySyntax>
+		<QuerySyntax>
+			<id>sql_left_join</id>
+			<name>left_join</name>
+			<value>LEFT JOIN</value>
+		</QuerySyntax>
+		<QuerySyntax>
+			<id>sql_right_join</id>
+			<name>right_join</name>
+			<value>RIGHT JOIN</value>
+		</QuerySyntax>
+		<QueriesGroup>
+			<id>query_group_1_h2_agile</id>
+			<name>system_group_h2_agile</name>
+			<createdBy>system</createdBy>
+			<createdDate>25/03/2020</createdDate>
+			<QuerySelect>
+				<id>query_h2_012WWW_KS</id>
+				<name>SELECT_CATALOGO_BY_ID</name>
+				<type>select</type>
+				<select>
+			 		select c.*
+				</select>
+				<from>
+					from catalog c 
+				</from>
+				<where>
+					where c.type = ?
+				</where>  
+			</QuerySelect> 		
+		</QueriesGroup>
+	</DataBase>
+</ProjectQueriesContainer>

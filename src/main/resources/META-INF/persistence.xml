@@ -16,6 +16,7 @@
 			<property name="org.platkmframework.format.date.time" value="yyyy-MM-dd-HH.mm.ss"/>   
 			<property name="org.platkmframework.format.date" value="yyyy-MM-dd"/>  
 			<property name="org.platkmframework.format.time" value="HH.mm.ss"/> 
+			<property name="org.platkmframework.database.querymanagers.path" value="/example/model.xml"/> 
         </properties>
     </persistence-unit>
 </persistence>

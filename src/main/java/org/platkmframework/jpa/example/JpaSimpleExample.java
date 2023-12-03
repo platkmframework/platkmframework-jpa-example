@@ -12,7 +12,7 @@ import org.platkmframework.jpa.persistence.CustomIoDprocess;
 import org.platkmframework.jpa.persistence.PersistenceManager;
 import org.platkmframework.jpa.persistence.PlatkmPersistenceFileParse;
 
-public class JpaExample {
+public class JpaSimpleExample {
 	
 	public static void main(String[] arg) {
 		
